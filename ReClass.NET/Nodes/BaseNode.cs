@@ -31,7 +31,8 @@ namespace ReClassNET.Nodes
 		public int Offset { get; set; }
 
 		/// <summary>Gets or sets the name of the node. If a new name was set the property changed event gets fired.</summary>
-		public virtual string Name { get => name; set { if (value != null && name != value) { name = value; NameChanged?.Invoke(this); } } }
+		public virtual string Name { get => name;
+			set { if (value != null && name != value) { name = value; NameChanged?.Invoke(this); } } }
 
 		/// <summary>Gets or sets the comment of the node.</summary>
 		public string Comment { get => comment; set { if (value != null && comment != value) { comment = value; CommentChanged?.Invoke(this); } } }
